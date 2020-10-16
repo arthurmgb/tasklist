@@ -1,7 +1,5 @@
 # Task List/Lista de tarefas (PHP)
----
 ## Banco de dados/Database
----
 #### **Database name:** "tasklist";
 
 #### **Table/tabela:** "tarefas";
