@@ -122,9 +122,24 @@ session_start();
                                     if($reg_tarefas === 0){
                                         echo "<img style='width: 20%' src='./gif/loading.gif' class='rounded mx-auto d-block'";
                                     }
+                                    
                                 ?>
-                            </div>
-                        </div>
+                            </div>            
+                            <?php
+                               if($reg_tarefas != 0){
+                               $pendentes = "SELECT * FROM tarefas WHERE checked = '0'";
+                               $result_pendentes = mysqli_query($conn, $pendentes);
+                               $reg_pendentes = mysqli_num_rows($result_pendentes);
+                               echo "
+                               <div class='card-footer text-muted'>
+                               <div class='ml-2'>
+                               {$reg_pendentes} tarefas pendentes 
+                               </div>
+                               </div>";
+                            }
+                            ?>         
+                        
+                        </div>  
                     </div>
                 </div>
             </div>
