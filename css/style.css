@@ -42,6 +42,7 @@ body{
     border-bottom: var(--border);       
     letter-spacing: 3px;  
     padding-bottom: 5px;
+    cursor: pointer;
 }
 .task{
     font-size: 1em;
@@ -122,6 +123,9 @@ input[type="text"]::placeholder{
     box-shadow: none;
     outline: 0 none;
 }
+.btn:hover{
+    transform: scale(1.1);
+}
 .badge{
     padding: 5px 10px 5px 10px;
     letter-spacing: 2px;
@@ -161,4 +165,14 @@ input[type="text"]::placeholder{
 }
 .marked-date{
     background-color: #ADB5BD !important;
+}
+.search{
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.btn-search:focus{
+    border-color: transparent;
+}
+.check-box:hover{
+    cursor: pointer;
 }

@@ -1,6 +1,13 @@
 <?php 
 include_once("conexao.php");
 session_start();
+
+$valor_pesquisar = $_GET['pesquisar'];
+
+
+
+
+
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -25,8 +32,8 @@ session_start();
                             <div class="card-body">    
                             <div class="d-flex flex-row-reverse bd-highlight">
                             <input type="checkbox" title="🌙" id="switch" class="form-check-input" onchange="myfunction(this)"> 
-                            </div>         
-                                <h1 onclick="window.location.href='index.php'" class="card-title text-center"><i class="fas fa-tasks mr-3"></i>Task List</h1>
+                            </div>    
+                            <h1 onclick="window.location.href='index.php'" class="card-title text-center"><i class="fas fa-tasks mr-3"></i>Task List</h1>
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="d-flex flex-row-reverse">
@@ -51,7 +58,7 @@ session_start();
                                         </div>  
                                 </form>
                                 <?php 
-                                    $tabela = "SELECT * FROM tarefas";
+                                    $tabela = "SELECT * FROM tarefas WHERE tarefa LIKE '%$valor_pesquisar%'";
                                     $result_tabela = mysqli_query($conn, $tabela);
                                     $reg_tarefas = mysqli_num_rows($result_tabela);
                                     while($row_tarefa = mysqli_fetch_assoc($result_tabela)){
