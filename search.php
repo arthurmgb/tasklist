@@ -3,11 +3,10 @@ include_once("conexao.php");
 session_start();
 
 $valor_pesquisar = $_GET['pesquisar'];
-
-
-
-
-
+$filtro = trim($valor_pesquisar);
+if(empty($filtro)){
+    header("Location: index.php");
+}
 ?>
 <!doctype html>
 <html lang="pt-br">
