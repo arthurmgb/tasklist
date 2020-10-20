@@ -113,7 +113,7 @@ session_start();
                                                     <label class='ml-2 mb-2 h6'>Definir data e hora</label>
                                                     <div class='form-group'>
                                                         <div class='input-group date' id='datetimepicker{$apagar}' data-target-input='nearest'>
-                                                            <input name='taskdate' type='text' class='form-control date-c datetimepicker-input' data-target='#datetimepicker{$apagar}'/>
+                                                            <input name='taskdate' placeholder='00/00/0000 00:00' data-mask='00/00/0000 00:00' type='text' class='form-control date-c datetimepicker-input' data-target='#datetimepicker{$apagar}'/>
                                                             <div class='input-group-append' data-target='#datetimepicker{$apagar}' data-toggle='datetimepicker'>
                                                                 <div class='calendar-c input-group-text'><i class='fas fa-calendar-alt calendar-hover'></i></div>
                                                             </div>
@@ -191,7 +191,7 @@ session_start();
                                                     <label class='ml-2 mb-2 h6'>Definir data e hora</label>
                                                     <div class='form-group'>
                                                         <div class='input-group date' id='datetimepicker{$apagar}' data-target-input='nearest'>
-                                                            <input name='taskdate' type='text' class='form-control date-c datetimepicker-input' data-target='#datetimepicker{$apagar}'/>
+                                                            <input name='taskdate' placeholder='00/00/0000 00:00' data-mask='00/00/0000 00:00' type='text' class='form-control date-c datetimepicker-input' data-target='#datetimepicker{$apagar}'/>
                                                             <div class='input-group-append' data-target='#datetimepicker{$apagar}' data-toggle='datetimepicker'>
                                                                 <div class='calendar-c input-group-text'><i class='fas fa-calendar-alt calendar-hover'></i></div>
                                                             </div>
@@ -269,7 +269,7 @@ session_start();
                                                     <label class='ml-2 mb-2 h6'>Definir data e hora</label>
                                                     <div class='form-group'>
                                                         <div class='input-group date' id='datetimepicker{$apagar}' data-target-input='nearest'>
-                                                            <input name='taskdate' type='text' class='form-control date-c datetimepicker-input' data-target='#datetimepicker{$apagar}'/>
+                                                            <input name='taskdate' placeholder='00/00/0000 00:00' data-mask='00/00/0000 00:00' type='text' class='form-control date-c datetimepicker-input' data-target='#datetimepicker{$apagar}'/>
                                                             <div class='input-group-append' data-target='#datetimepicker{$apagar}' data-toggle='datetimepicker'>
                                                                 <div class='calendar-c input-group-text'><i class='fas fa-calendar-alt calendar-hover'></i></div>
                                                             </div>
@@ -340,6 +340,7 @@ session_start();
             </div>
         </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script>  
         var audio = new Audio('audio/rain.mp4');
         audio.volume = 0.5;

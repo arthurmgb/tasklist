@@ -119,7 +119,7 @@ if(empty($filtro)){
                                                     <label class='ml-2 mb-2 h6'>Definir data e hora</label>
                                                     <div class='form-group'>
                                                         <div class='input-group date' id='datetimepicker{$apagar}' data-target-input='nearest'>
-                                                            <input name='taskdate' type='text' class='form-control date-c datetimepicker-input' data-target='#datetimepicker{$apagar}'/>
+                                                            <input name='taskdate' placeholder='00/00/0000 00:00' data-mask='00/00/0000 00:00' type='text' class='form-control date-c datetimepicker-input' data-target='#datetimepicker{$apagar}'/>
                                                             <div class='input-group-append' data-target='#datetimepicker{$apagar}' data-toggle='datetimepicker'>
                                                                 <div class='calendar-c input-group-text'><i class='fas fa-calendar-alt calendar-hover'></i></div>
                                                             </div>
@@ -197,7 +197,7 @@ if(empty($filtro)){
                                                     <label class='ml-2 mb-2 h6'>Definir data e hora</label>
                                                     <div class='form-group'>
                                                         <div class='input-group date' id='datetimepicker{$apagar}' data-target-input='nearest'>
-                                                            <input name='taskdate' type='text' class='form-control date-c datetimepicker-input' data-target='#datetimepicker{$apagar}'/>
+                                                            <input name='taskdate' placeholder='00/00/0000 00:00' data-mask='00/00/0000 00:00' type='text' class='form-control date-c datetimepicker-input' data-target='#datetimepicker{$apagar}'/>
                                                             <div class='input-group-append' data-target='#datetimepicker{$apagar}' data-toggle='datetimepicker'>
                                                                 <div class='calendar-c input-group-text'><i class='fas fa-calendar-alt calendar-hover'></i></div>
                                                             </div>
@@ -275,7 +275,7 @@ if(empty($filtro)){
                                                     <label class='ml-2 mb-2 h6'>Definir data e hora</label>
                                                     <div class='form-group'>
                                                         <div class='input-group date' id='datetimepicker{$apagar}' data-target-input='nearest'>
-                                                            <input name='taskdate' type='text' class='form-control date-c datetimepicker-input' data-target='#datetimepicker{$apagar}'/>
+                                                            <input name='taskdate' placeholder='00/00/0000 00:00' data-mask='00/00/0000 00:00' type='text' class='form-control date-c datetimepicker-input' data-target='#datetimepicker{$apagar}'/>
                                                             <div class='input-group-append' data-target='#datetimepicker{$apagar}' data-toggle='datetimepicker'>
                                                                 <div class='calendar-c input-group-text'><i class='fas fa-calendar-alt calendar-hover'></i></div>
                                                             </div>
