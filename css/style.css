@@ -29,7 +29,7 @@ body{
 }
 .card{
     border-radius: 15px;
-    width: 30rem;
+    width: 35rem;
     top: 250px;
     box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.4);
 }
@@ -101,6 +101,16 @@ body{
     transform: scale(1.2);
 }
 .fa-trash:active{
+    cursor: grabbing;
+}
+.fa-editar{
+    color: #007BFF;
+}
+.fa-editar:hover{
+    cursor: grab;
+    transform: scale(1.2);
+}
+.fa-editar:active{
     cursor: grabbing;
 }
 input[type="text"]{
@@ -175,4 +185,31 @@ input[type="text"]::placeholder{
 }
 .check-box:hover{
     cursor: pointer;
+}
+.edit-header{
+    background-color: #007BFF !important;
+}
+.edit-ico{
+    color: #fff !important;
+}
+.foc-edit:focus{
+    border-color: #007BFF !important;
+    border-bottom: 2px solid #007BFF;
+}
+.date-c{
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.date-c:focus{
+    border-color: #007BFF !important;
+    border-bottom: 2px solid #007BFF;
+}
+.calendar-c{
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+.calendar-hover:hover{
+    transform: scale(1.2);
+    color: #007BFF;
 }
