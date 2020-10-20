@@ -57,7 +57,7 @@ if(empty($filtro)){
                                         <div class="d-flex flex-row-reverse">
                                         <form class="form-inline" method="GET" action="search.php">
                                             <input class="search form-control form-control-sm" type="text" name="pesquisar" id="pesquisa" placeholder="Pesquisar...">
-                                            <button class="btn btn-search pl-1" type="submit"><i class="fas fa-search"></i></button>
+                                            <button class="btn btn-search pl-2" type="submit"><i class="fas fa-search"></i></button>
                                         </form>
                                         </div>
                                     </div>
